@@ -1,11 +1,14 @@
 import settings
 import typing
+
+from .Logic import YomiHustleLogicData
+from .Item import YomiHustleItem
+from .Location import YomiHustleLocation
 from .Options import YomiHustleOptions  # the options we defined earlier
-from .Items import YomiHustleItem, hustle_items  # data used below to add items to the World
-from .Locations import YomiHustleLocation, hustle_locations  # same as above
-from worlds.AutoWorld import World
-from BaseClasses import Region, Location, Entrance, Item, ItemClassification
+from worlds.AutoWorld import InvalidItemError, World
+from BaseClasses import MultiWorld, Region, Location, Entrance, Item, ItemClassification
 from worlds.generic.Rules import add_rule, set_rule, forbid_item, add_item_rule
+
 
 
 class YomiHustleSettings(settings.Group):
@@ -19,29 +22,26 @@ class YomiHustleWorld(World):
     options_dataclass = YomiHustleOptions  # options the player can set
     options: YomiHustleOptions  # typing hints for option results
     settings: typing.ClassVar[YomiHustleSettings]  # will be automatically assigned from type hint
-    topology_present = True  # show path to required location checks in spoiler
-
-    # ID of first item and location, could be hard-coded but code may be easier
-    # to read with this as a property.
-    #base_id = 1234
-    # instead of dynamic numbering, IDs could be part of data
+    topology_present = False
 
     # The following two dicts are required for the generation to know which
     # items exist. They could be generated from json or something else. They can
     # include events, but don't have to since events will be placed manually.
-    item_name_to_id = hustle_items
-    location_name_to_id = hustle_locations
+    item_name_to_id = YomiHustleLogicData.get_item_name_to_id()
+    location_name_to_id = YomiHustleLogicData.get_location_name_to_id()
+    item_name_groups = YomiHustleLogicData.get_item_groups()
+    location_name_groups = YomiHustleLogicData.get_location_groups()
 
-    # Items can be grouped using their names to allow easy checking if any item
-    # from that group has been collected. Group names can also be used for !hint
-    #item_name_groups = {
-    #    "weapons": {"sword", "lance"},
-    #}
-    
+
+
+    def __init__(self, multiworld: MultiWorld, player: int):
+        super(YomiHustleWorld, self).__init__(multiworld, player)
+        self.random_start_moves :list[str] = []
+
     
     
     def generate_early(self) -> None:
-        self.random_start_moves = [ "Cowboy - 3 Combo", "Cowboy - Lightning Slice", "Cowboy - Lasso" ]
+        self.random_start_moves = YomiHustleLogicData.randomize_start_moves(self.random)
         for move in self.random_start_moves:
             self.multiworld.push_precollected(self.create_item(move))
         #self.multiworld.push_precollected(self.create_item("Cowboy - 3 Combo Down"))
@@ -61,7 +61,7 @@ class YomiHustleWorld(World):
         main_region = Region("Main Area", self.player, self.multiworld)
         # add main area's locations to main area (all but final boss)
         # main_region.add_locations(main_region_locations, MyGameLocation)
-        for location_name in hustle_locations:
+        for location_name in self.location_name_to_id:
             location_id = self.location_name_to_id[location_name]
             location_entry = YomiHustleLocation(self.player, location_name, location_id, main_region)
             main_region.locations.append(location_entry)
@@ -78,15 +78,17 @@ class YomiHustleWorld(World):
         main_region.connect(goal_region)
         
         
-        
+
     
     
-    
-    def create_item(self, item: str) -> YomiHustleItem:
-        if item == "Nothing":
-            return YomiHustleItem(item, ItemClassification.filler, 1, self.player)
-        classification = ItemClassification.progression
-        return YomiHustleItem(item, classification, self.item_name_to_id[item], self.player)
+    def create_item(self, name: str) -> YomiHustleItem:
+        if name == "Nothing": # TODO remove and add filler type to logic class
+            return YomiHustleItem(name, ItemClassification.filler, 1, self.player)
+        if name not in self.item_name_to_id:
+            raise InvalidItemError
+        item_id = self.item_name_to_id[name]
+        classification = YomiHustleLogicData.get_item_classification(item_id)
+        return YomiHustleItem(name, classification, item_id, self.player)
     
     
     
@@ -112,6 +114,8 @@ class YomiHustleWorld(World):
         basic_item_pool = self.item_name_to_id.keys()
         
         junk = 0
+
+        
         
         for item in basic_item_pool:
             if item in exclude:
@@ -120,7 +124,7 @@ class YomiHustleWorld(World):
                 junk += 1
             else:
                 self.multiworld.itempool.append(self.create_item(item))
-
+        
         # itempool and number of locations should match up.
         # If this is not the case we want to fill the itempool with junk.
         #self.multiworld.itempool += [self.create_item("Nothing") for _ in range(junk)]
@@ -129,13 +133,20 @@ class YomiHustleWorld(World):
     
     
     def set_rules(self) -> None:
-        for location_name in hustle_locations:
+        for location_name in self.location_name_to_id:
+            location_id = self.location_name_to_id[location_name]
             #forbid_item(self.multiworld.get_location(location_name, self.player), location_name, self.player)
             set_rule(self.multiworld.get_location(location_name, self.player),
-                lambda state, l=location_name: state.has(l, self.player))
+                YomiHustleLogicData.get_location_rule(location_id, self.player))
         
         self.multiworld.get_location("Goal", self.player).place_locked_item(self.create_event("Victory"))
-    
+        set_rule(self.get_location("Goal"),
+            lambda state: state.has_group_unique("Moves", self.player, 180) and state.has_all(self.item_name_groups["Fighters"], self.player))
+            # TODO HUSTLE LETTERS GOAL
+            # TODO COLLECTION GOAL
+            # TODO WINS GOAL
+
+
         self.multiworld.completion_condition[self.player] = lambda state: state.has("Victory", self.player)
         
         

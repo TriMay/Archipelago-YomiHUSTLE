@@ -1,0 +1,3091 @@
+{
+	"id": 4,
+	"name": "Robot",
+	"path": "res://characters/robo/Robot.tscn",
+	"items": {
+		"Block": {
+			"id": 1,
+			"name": "Block",
+			"starter": false,
+			"type": "Defense",
+			"location": 3,
+			"free_item": false,
+			"states": [
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff"
+			]
+		},
+		"Dodge": {
+			"id": 2,
+			"name": "Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Roll"
+			]
+		},
+		"SAW BLADE": {
+			"id": 3,
+			"name": "SAW BLADE",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"SawBlade"
+			]
+		},
+		"KEYPUNCH": {
+			"id": 4,
+			"name": "KEYPUNCH",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Punch"
+			]
+		},
+		"PING": {
+			"id": 5,
+			"name": "PING",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Slap"
+			]
+		},
+		"OPTICAL BEAM": {
+			"id": 6,
+			"name": "OPTICAL BEAM",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"EyeBeam",
+				"EyeBeamAir"
+			]
+		},
+		"KICK USER": {
+			"id": 7,
+			"name": "KICK USER",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"SideKick",
+				"SideKickAir"
+			]
+		},
+		"CONCUSSIVE BLAST": {
+			"id": 8,
+			"name": "CONCUSSIVE BLAST",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Blast"
+			]
+		},
+		"STEP": {
+			"id": 9,
+			"name": "STEP",
+			"starter": true,
+			"type": "Movement",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Step"
+			]
+		},
+		"PROPEL": {
+			"id": 10,
+			"name": "PROPEL",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Propel"
+			]
+		},
+		"RETURN": {
+			"id": 11,
+			"name": "RETURN",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Return"
+			]
+		},
+		"BOOT": {
+			"id": 12,
+			"name": "BOOT",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"AirKick"
+			]
+		},
+		"KILL PROCESS": {
+			"id": 13,
+			"name": "KILL PROCESS",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"KillProcess"
+			]
+		},
+		"TRY-CATCH": {
+			"id": 14,
+			"name": "TRY-CATCH",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral"
+			]
+		},
+		"BOUNDS CHECK": {
+			"id": 15,
+			"name": "BOUNDS CHECK",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir"
+			]
+		},
+		"COMMAND: GRAB": {
+			"id": 16,
+			"name": "COMMAND: GRAB",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"CommandGrab"
+			]
+		},
+		"THUNDER CLAP": {
+			"id": 17,
+			"name": "THUNDER CLAP",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ClapJump"
+			]
+		},
+		"CRASH": {
+			"id": 18,
+			"name": "CRASH",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Plummet"
+			]
+		},
+		"FLAME THROWER": {
+			"id": 19,
+			"name": "FLAME THROWER",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Flamethrower"
+			]
+		},
+		"CHAIN SAW": {
+			"id": 20,
+			"name": "CHAIN SAW",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Chainsaw"
+			]
+		},
+		"VACUUM": {
+			"id": 21,
+			"name": "VACUUM",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Vacuum"
+			]
+		},
+		"LOIC": {
+			"id": 22,
+			"name": "LOIC",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"LOIC"
+			]
+		},
+		"SHUTDOWN": {
+			"id": 23,
+			"name": "SHUTDOWN",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DisableLoic"
+			]
+		},
+		"EARTHQUAKE": {
+			"id": 24,
+			"name": "EARTHQUAKE",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"GroundPound"
+			]
+		},
+		"SPIN CYCLE": {
+			"id": 25,
+			"name": "SPIN CYCLE",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Lariat"
+			]
+		},
+		"DRIVE": {
+			"id": 26,
+			"name": "DRIVE",
+			"starter": false,
+			"type": "Special",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Drive"
+			]
+		},
+		"JUMPSTART": {
+			"id": 27,
+			"name": "JUMPSTART",
+			"starter": false,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DriveJump"
+			]
+		},
+		"DRIFT": {
+			"id": 28,
+			"name": "DRIFT",
+			"starter": false,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DriveDrift"
+			]
+		},
+		"WHEELIE": {
+			"id": 29,
+			"name": "WHEELIE",
+			"starter": false,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DriveWheelie"
+			]
+		},
+		"BOOST": {
+			"id": 30,
+			"name": "BOOST",
+			"starter": false,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DriveBoost"
+			]
+		},
+		"CLUTCH": {
+			"id": 31,
+			"name": "CLUTCH",
+			"starter": false,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DriveWheelieGrab"
+			]
+		},
+		"IDLE": {
+			"id": 32,
+			"name": "IDLE",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"DriveIdle"
+			]
+		},
+		"FORWARD": {
+			"id": 33,
+			"name": "FORWARD",
+			"starter": false,
+			"type": "Movement",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DriveForward"
+			]
+		},
+		"BACKWARD": {
+			"id": 34,
+			"name": "BACKWARD",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DriveBackward"
+			]
+		},
+		"REMOTE BOMB": {
+			"id": 35,
+			"name": "REMOTE BOMB",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Grenade"
+			]
+		},
+		"MAGNETIZE": {
+			"id": 36,
+			"name": "MAGNETIZE",
+			"starter": false,
+			"type": "Special",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Magnetize"
+			]
+		},
+		"OVERFLOW": {
+			"id": 37,
+			"name": "OVERFLOW",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"OverflowGrab"
+			]
+		},
+		"LAUNCH": {
+			"id": 38,
+			"name": "LAUNCH",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Missile"
+			]
+		},
+		"Wait": {
+			"id": 39,
+			"name": "Wait",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Wait"
+			]
+		},
+		"Burst": {
+			"id": 40,
+			"name": "Burst",
+			"starter": false,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Burst",
+				"DefensiveBurst",
+				"OffensiveBurst"
+			]
+		},
+		"Fall": {
+			"id": 41,
+			"name": "Fall",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Fall"
+			]
+		},
+		"Landing": {
+			"id": 42,
+			"name": "Landing",
+			"starter": false,
+			"type": "Hurt",
+			"location": 1,
+			"free_item": true,
+			"states": [
+				"Landing"
+			]
+		},
+		"Getup": {
+			"id": 43,
+			"name": "Getup",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Getup"
+			]
+		},
+		"Tech Dodge": {
+			"id": 44,
+			"name": "Tech Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"TechRoll"
+			]
+		},
+		"Jump": {
+			"id": 45,
+			"name": "Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Jump"
+			]
+		},
+		"Super Dash": {
+			"id": 46,
+			"name": "Super Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"ChargeDash"
+			]
+		},
+		"Super Jump": {
+			"id": 47,
+			"name": "Super Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"SuperJump"
+			]
+		},
+		"Inst. Cancel": {
+			"id": 48,
+			"name": "Inst. Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"InstantCancel"
+			]
+		},
+		"Whiff Cancel": {
+			"id": 49,
+			"name": "Whiff Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"WhiffInstantCancel"
+			]
+		},
+		"Throw": {
+			"id": 50,
+			"name": "Throw",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Grab",
+				"AirGrab"
+			]
+		},
+		"Forward Throw": {
+			"id": 51,
+			"name": "Forward Throw",
+			"starter": false,
+			"type": "Attack",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"AirForwardThrow"
+			]
+		},
+		"Back Throw": {
+			"id": 52,
+			"name": "Back Throw",
+			"starter": false,
+			"type": "Attack",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"AirBackThrow"
+			]
+		},
+		"Hustle": {
+			"id": 53,
+			"name": "Hustle",
+			"starter": false,
+			"type": "Defense",
+			"location": 2,
+			"free_item": false,
+			"states": [
+				"Taunt"
+			]
+		}
+	},
+	"states": {
+		"Start": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParrySuper": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"Aerial",
+				"GroundedDefense",
+				"AerialDefense",
+				"GroundedSpecial",
+				"AerialSpecial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParryHigh": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive",
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"GroundedDefense",
+				"AerialDefense",
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParryAfterWhiff": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive",
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"GroundedDefense",
+				"AerialDefense",
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Roll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SawBlade": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Punch": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Slap": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"EyeBeam": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"EyeBeamAir": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SideKick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Blast": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SideKickAir": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Step": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Propel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Return": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Return"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirKick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"KillProcess": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive",
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"KillProcessSpin": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"KillProcess"
+			]
+		},
+		"DisembowelHitGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DisembowelHitGrabNeutral": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DisembowelGrabFollowup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral"
+			]
+		},
+		"CornerCarryHitGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"CornerCarryHitGrabAir": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"CornerCarryHold": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir"
+			]
+		},
+		"CornerCarryRelease": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"CornerCarryHold"
+			]
+		},
+		"GroundSlam": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"CommandGrab"
+			]
+		},
+		"CommandGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ClapJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Plummet": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Flamethrower": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Chainsaw": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"AerialAttack",
+				"GroundedSpecial",
+				"GroundedAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Vacuum": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"GroundedAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"LOIC": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive",
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DisableLoic": {
+			"resources": [
+				"LOIC"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"GroundPound": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"EarthquakeThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"GroundPound"
+			]
+		},
+		"Lariat": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Drive": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"GroundPound",
+				"Lariat"
+			]
+		},
+		"FastDriveCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Propel",
+				"ChargeDash"
+			]
+		},
+		"UnDriveCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"DriveForward"
+			]
+		},
+		"DriveJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveDrift": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveWheelie": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveBoost": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveWheelieGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveWheelieThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"DriveWheelieGrab"
+			]
+		},
+		"DriveIdle": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveForward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DriveBackward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Drive": [
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Grenade": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Magnetize": {
+			"resources": [
+				"Grenade"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"Aerial",
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OverflowGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OverflowFollowup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"OverflowGrab"
+			]
+		},
+		"Missile": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Wait": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Wait",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Burst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"BusyHurt"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DefensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Drive",
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OffensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"OffensiveBurst"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Fall": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Fall",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Landing": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab",
+				"SawBlade",
+				"OverflowGrab",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"@PlayerExtra"
+			]
+		},
+		"Knockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HardKnockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Getup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TechRoll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Jump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ChargeDash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"InstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"InstantCancel"
+			],
+			"follow_from": [
+
+			]
+		},
+		"WhiffInstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"BusyNormal"
+			],
+			"follow_from": [
+
+			]
+		},
+		"HurtDizzy": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"WallSlam": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtAerial": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtGrounded": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Grabbed": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"AirHold": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"Grab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"GroundedGrab",
+				"Grounded",
+				"GroundedAttack"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal",
+					"Drive"
+				]
+			},
+			"interrupt_from": [
+				"AerialGrab",
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"BackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"AirForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialThrow"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirBackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialThrow"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Taunt": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"@PlayerExtra": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		}
+	},
+	"interrupts_by_stance": {
+		"Normal": {
+			"Grounded": [
+				"HurtAerial",
+				"ParrySuper",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"BackThrow",
+				"Grab",
+				"Landing",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"DisembowelHitGrab",
+				"SawBlade",
+				"CornerCarryRelease",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Step",
+				"Return",
+				"Propel",
+				"ChargeDash",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"WallSlam",
+				"Start"
+			],
+			"Aerial": [
+				"ParrySuper",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"BackThrow",
+				"Grab",
+				"Landing",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"DisembowelHitGrab",
+				"SawBlade",
+				"CornerCarryRelease",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrabNeutral",
+				"DefensiveBurst",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"WallSlam",
+				"Start"
+			],
+			"OffensiveBurst": [
+				"ParrySuper",
+				"InstantCancel",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"InstantCancel": [
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"BackThrow",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"GroundedDefense": [
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"OffensiveBurst",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"AerialDefense": [
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"OffensiveBurst",
+				"InstantCancel",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"GroundedGrab": [
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"OffensiveBurst",
+				"InstantCancel",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"AerialGrab": [
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"OffensiveBurst",
+				"InstantCancel",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"AerialThrow": [
+				"AirHold"
+			],
+			"Wait": [
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"Fall": [
+				"Wait",
+				"Fall",
+				"Punch",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"Landing",
+				"Burst",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"BusyNormal": [
+				"Fall",
+				"Punch",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"KillProcessSpin",
+				"KillProcess",
+				"LOIC",
+				"DriveJump",
+				"DriveDrift",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"AirHold",
+				"Flamethrower",
+				"Missile",
+				"Taunt",
+				"AirGrab",
+				"DisembowelGrabFollowup",
+				"CornerCarryRelease",
+				"CornerCarryHold",
+				"CornerCarryHitGrab",
+				"CornerCarryHitGrabAir",
+				"ClapJump",
+				"Chainsaw",
+				"Grenade",
+				"Magnetize",
+				"OverflowFollowup",
+				"OverflowGrab",
+				"SawBlade",
+				"EyeBeamAir",
+				"SideKickAir",
+				"AirKick",
+				"Plummet",
+				"Vacuum",
+				"Jump",
+				"SuperJump",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"GroundSlam",
+				"CommandGrab",
+				"DefensiveBurst",
+				"WhiffInstantCancel",
+				"DriveWheelieThrow",
+				"UnDriveCancel",
+				"Slap",
+				"EyeBeam",
+				"SideKick",
+				"Blast",
+				"EarthquakeThrow",
+				"GroundPound",
+				"Lariat",
+				"Wait",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"Roll",
+				"DisableLoic",
+				"Return",
+				"Step",
+				"Propel",
+				"ChargeDash",
+				"TechRoll",
+				"Start"
+			],
+			"GroundedAttack": [
+				"WhiffInstantCancel",
+				"DisembowelHitGrab",
+				"Chainsaw",
+				"SawBlade",
+				"DisembowelHitGrabNeutral",
+				"EyeBeam"
+			],
+			"GroundedSuper": [
+				"Landing",
+				"ClapJump",
+				"Chainsaw",
+				"SawBlade",
+				"Vacuum",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"WhiffInstantCancel",
+				"Slap",
+				"EyeBeam",
+				"GroundPound"
+			],
+			"BusyHurt": [
+				"Landing",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam"
+			],
+			"GroundedSpecial": [
+				"WhiffInstantCancel",
+				"Chainsaw",
+				"SawBlade",
+				"Vacuum",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"Slap",
+				"EyeBeam",
+				"GroundPound"
+			],
+			"AerialAttack": [
+				"DisembowelHitGrab",
+				"SawBlade",
+				"Chainsaw",
+				"DisembowelHitGrabNeutral",
+				"WhiffInstantCancel"
+			],
+			"AerialSpecial": [
+				"SawBlade",
+				"Chainsaw",
+				"Vacuum",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"WhiffInstantCancel"
+			],
+			"AerialSuper": [
+				"Chainsaw",
+				"SawBlade",
+				"Vacuum",
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"WhiffInstantCancel"
+			],
+			"Jump": [
+				"DisembowelHitGrab",
+				"DisembowelHitGrabNeutral",
+				"EyeBeam"
+			],
+			"Magnetize": [
+				"GroundSlam"
+			],
+			"Return": [
+				"Step"
+			],
+			"OTG": [
+				"Knockdown"
+			]
+		},
+		"Drive": {
+			"Grounded": [
+				"DriveCancel",
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"FastDriveCancel"
+			],
+			"OffensiveBurst": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"InstantCancel": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"GroundedDefense": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"AerialDefense": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"GroundedGrab": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"AerialGrab": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"Wait": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"Fall": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"BusyNormal": [
+				"DriveWheelie",
+				"Drive",
+				"DriveBoost",
+				"DriveWheelieGrab",
+				"DriveIdle",
+				"DriveForward",
+				"DriveBackward",
+				"DriveCancel",
+				"FastDriveCancel"
+			],
+			"Aerial": [
+				"Drive",
+				"DriveForward",
+				"DriveCancel",
+				"FastDriveCancel"
+			]
+		}
+	},
+	"resources": {
+		"LOIC": [
+			"LOIC"
+		],
+		"Grenade": [
+			"Grenade"
+		]
+	}
+}

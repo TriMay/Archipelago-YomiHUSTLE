@@ -1,0 +1,2351 @@
+{
+	"id": 3,
+	"name": "Wizard",
+	"path": "res://characters/wizard/Wizard.tscn",
+	"items": {
+		"Block": {
+			"id": 1,
+			"name": "Block",
+			"starter": false,
+			"type": "Defense",
+			"location": 3,
+			"free_item": false,
+			"states": [
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff"
+			]
+		},
+		"Dodge": {
+			"id": 2,
+			"name": "Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Roll"
+			]
+		},
+		"Telekinesis": {
+			"id": 3,
+			"name": "Telekinesis",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Telekinesis"
+			]
+		},
+		"Launch": {
+			"id": 4,
+			"name": "Launch",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Launch"
+			]
+		},
+		"Redirect": {
+			"id": 5,
+			"name": "Redirect",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"SuperLaunch"
+			]
+		},
+		"Spark Bomb": {
+			"id": 6,
+			"name": "Spark Bomb",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"SparkBomb"
+			]
+		},
+		"Orb": {
+			"id": 7,
+			"name": "Orb",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Orb"
+			]
+		},
+		"Mana Kick": {
+			"id": 8,
+			"name": "Mana Kick",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"AirKick"
+			]
+		},
+		"Icicle": {
+			"id": 9,
+			"name": "Icicle",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"IceSpikeAir",
+				"IceSpikeGround"
+			]
+		},
+		"Combustion": {
+			"id": 10,
+			"name": "Combustion",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Combust"
+			]
+		},
+		"Tome Slap": {
+			"id": 11,
+			"name": "Tome Slap",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"TomeSlap"
+			]
+		},
+		"Kick": {
+			"id": 12,
+			"name": "Kick",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Kick"
+			]
+		},
+		"Mana Strike": {
+			"id": 13,
+			"name": "Mana Strike",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ManaStrike"
+			]
+		},
+		"Flame Wave": {
+			"id": 14,
+			"name": "Flame Wave",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"FlameWave"
+			]
+		},
+		"Missile Form": {
+			"id": 15,
+			"name": "Missile Form",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Liftoff"
+			]
+		},
+		"Magic Dart": {
+			"id": 16,
+			"name": "Magic Dart",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"MagicMissile"
+			]
+		},
+		"Orb Tether": {
+			"id": 17,
+			"name": "Orb Tether",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"OrbTether"
+			]
+		},
+		"Gust": {
+			"id": 18,
+			"name": "Gust",
+			"starter": false,
+			"type": "Special",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Gust"
+			]
+		},
+		"Zephyr": {
+			"id": 19,
+			"name": "Zephyr",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"WindForce"
+			]
+		},
+		"Orb Portal": {
+			"id": 20,
+			"name": "Orb Portal",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"OrbTeleport"
+			]
+		},
+		"Conjure Weapon": {
+			"id": 21,
+			"name": "Conjure Weapon",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ConjureWeapon"
+			]
+		},
+		"Conjure Storm": {
+			"id": 22,
+			"name": "Conjure Storm",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ConjureStorm"
+			]
+		},
+		"Vile Clutch": {
+			"id": 23,
+			"name": "Vile Clutch",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"VileClutch"
+			]
+		},
+		"Confusing Touch": {
+			"id": 24,
+			"name": "Confusing Touch",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ConfusingTouch"
+			]
+		},
+		"Geyser": {
+			"id": 25,
+			"name": "Geyser",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Geyser"
+			]
+		},
+		"Bolt of Magma": {
+			"id": 26,
+			"name": "Bolt of Magma",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"BoltOfMagma"
+			]
+		},
+		"Wait": {
+			"id": 27,
+			"name": "Wait",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Wait"
+			]
+		},
+		"Burst": {
+			"id": 28,
+			"name": "Burst",
+			"starter": false,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Burst",
+				"DefensiveBurst",
+				"OffensiveBurst"
+			]
+		},
+		"Fall": {
+			"id": 29,
+			"name": "Fall",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Fall"
+			]
+		},
+		"Getup": {
+			"id": 30,
+			"name": "Getup",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Getup"
+			]
+		},
+		"Tech Dodge": {
+			"id": 31,
+			"name": "Tech Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"TechRoll"
+			]
+		},
+		"Dash Forward": {
+			"id": 32,
+			"name": "Dash Forward",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DashForward"
+			]
+		},
+		"Dash Back": {
+			"id": 33,
+			"name": "Dash Back",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DashBackward"
+			]
+		},
+		"Jump": {
+			"id": 34,
+			"name": "Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Jump"
+			]
+		},
+		"Super Dash": {
+			"id": 35,
+			"name": "Super Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"ChargeDash"
+			]
+		},
+		"Super Jump": {
+			"id": 36,
+			"name": "Super Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"SuperJump"
+			]
+		},
+		"Double Jump": {
+			"id": 37,
+			"name": "Double Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DoubleJump"
+			]
+		},
+		"Inst. Cancel": {
+			"id": 38,
+			"name": "Inst. Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"InstantCancel"
+			]
+		},
+		"Whiff Cancel": {
+			"id": 39,
+			"name": "Whiff Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"WhiffInstantCancel"
+			]
+		},
+		"Throw": {
+			"id": 40,
+			"name": "Throw",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Grab",
+				"AirGrab"
+			]
+		},
+		"Hustle": {
+			"id": 41,
+			"name": "Hustle",
+			"starter": false,
+			"type": "Defense",
+			"location": 2,
+			"free_item": false,
+			"states": [
+				"Taunt"
+			]
+		}
+	},
+	"states": {
+		"Start": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParrySuper": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"Aerial",
+				"GroundedDefense",
+				"AerialDefense",
+				"GroundedSpecial",
+				"AerialSpecial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParryHigh": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParryAfterWhiff": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Roll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Telekinesis": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Launch": {
+			"resources": [
+				"Telekinesis"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"GroundedSuper",
+				"AerialSpecial",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperLaunch": {
+			"resources": [
+				"Telekinesis"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"GroundedSuper",
+				"AerialSpecial",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SparkBomb": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Orb": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirKick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"IceSpikeAir": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"IceSpikeAir2": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"IceSpikeGround"
+			]
+		},
+		"Combust": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"IceSpikeGround": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TomeSlap": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Kick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ManaStrike": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"AerialAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"FlameWave": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Liftoff": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"MagicMissile": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OrbTether": {
+			"resources": [
+				"Orb"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Gust": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"WindForce": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ZephyrThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"WindForce"
+			]
+		},
+		"OrbTeleport": {
+			"resources": [
+				"Orb"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ConjureWeapon": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"GroundedAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ConjureStorm": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"VileClutch": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ConfusingTouch": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Geyser": {
+			"resources": [
+				"Water"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"BoltOfMagma": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Wait": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Wait",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Burst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"BusyHurt"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DefensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OffensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OffensiveBurst"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Fall": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Fall",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Landing": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"IceSpikeAir2",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust"
+			]
+		},
+		"Knockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HardKnockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Getup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TechRoll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DashForward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DashBackward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Jump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ChargeDash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DoubleJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"InstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"InstantCancel"
+			],
+			"follow_from": [
+
+			]
+		},
+		"WhiffInstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"BusyNormal"
+			],
+			"follow_from": [
+
+			]
+		},
+		"HurtDizzy": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"WallSlam": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtAerial": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtGrounded": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Grabbed": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Grab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedGrab",
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialGrab",
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"BackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"AirForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"AirBackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"AirDownThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"Taunt": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"@PlayerExtra": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		}
+	},
+	"interrupts_by_stance": {
+		"Normal": {
+			"Grounded": [
+				"HurtAerial",
+				"ParrySuper",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"IceSpikeGround",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Gust",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"TomeSlap",
+				"Kick",
+				"ManaStrike",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"BackThrow",
+				"Grab",
+				"Roll",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"WallSlam",
+				"Start"
+			],
+			"Aerial": [
+				"ParrySuper",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Gust",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"ManaStrike",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"BackThrow",
+				"Grab",
+				"Roll",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"WallSlam",
+				"Start"
+			],
+			"OffensiveBurst": [
+				"ParrySuper",
+				"InstantCancel",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"IceSpikeAir2",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"InstantCancel": [
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"IceSpikeAir2",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"BackThrow",
+				"Roll",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"GroundedDefense": [
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"AerialDefense": [
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"GroundedGrab": [
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"AerialGrab": [
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"Wait": [
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"Fall": [
+				"Wait",
+				"Fall",
+				"Landing",
+				"Burst",
+				"IceSpikeAir2",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirForwardThrow",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"BusyNormal": [
+				"Fall",
+				"IceSpikeAir2",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Launch",
+				"SuperLaunch",
+				"Orb",
+				"FlameWave",
+				"Liftoff",
+				"MagicMissile",
+				"Telekinesis",
+				"SparkBomb",
+				"OrbTether",
+				"OrbTeleport",
+				"Taunt",
+				"Gust",
+				"VileClutch",
+				"ConfusingTouch",
+				"Geyser",
+				"ZephyrThrow",
+				"WindForce",
+				"Jump",
+				"SuperJump",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"AirKick",
+				"IceSpikeAir",
+				"Combust",
+				"ManaStrike",
+				"ConjureWeapon",
+				"AirForwardThrow",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ConjureStorm",
+				"BoltOfMagma",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Wait",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"TechRoll",
+				"Start"
+			],
+			"GroundedAttack": [
+				"WhiffInstantCancel",
+				"IceSpikeGround",
+				"ConfusingTouch",
+				"TomeSlap",
+				"Kick",
+				"ManaStrike",
+				"BoltOfMagma"
+			],
+			"BusyHurt": [
+				"Landing",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam"
+			],
+			"GroundedSpecial": [
+				"IceSpikeGround",
+				"Gust",
+				"ConfusingTouch",
+				"Geyser",
+				"WindForce",
+				"TomeSlap",
+				"Kick",
+				"ManaStrike",
+				"ConjureWeapon",
+				"BoltOfMagma",
+				"WhiffInstantCancel"
+			],
+			"GroundedSuper": [
+				"Gust",
+				"ConfusingTouch",
+				"Geyser",
+				"WindForce",
+				"IceSpikeGround",
+				"TomeSlap",
+				"Kick",
+				"ManaStrike",
+				"ConjureWeapon",
+				"BoltOfMagma",
+				"WhiffInstantCancel"
+			],
+			"AerialSpecial": [
+				"Gust",
+				"Geyser",
+				"WindForce",
+				"ManaStrike",
+				"ConjureWeapon",
+				"WhiffInstantCancel"
+			],
+			"AerialSuper": [
+				"Gust",
+				"Geyser",
+				"WindForce",
+				"ManaStrike",
+				"ConjureWeapon",
+				"WhiffInstantCancel"
+			],
+			"Jump": [
+				"IceSpikeGround",
+				"TomeSlap",
+				"ManaStrike",
+				"BoltOfMagma"
+			],
+			"AerialAttack": [
+				"ManaStrike",
+				"WhiffInstantCancel"
+			],
+			"OTG": [
+				"Knockdown"
+			]
+		}
+	},
+	"resources": {
+		"Orb": [
+			"Orb"
+		],
+		"Telekinesis": [
+			"Telekinesis"
+		]
+	}
+}

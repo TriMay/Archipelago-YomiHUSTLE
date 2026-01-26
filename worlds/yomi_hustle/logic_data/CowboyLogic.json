@@ -1,0 +1,3229 @@
+{
+	"id": 2,
+	"name": "Cowboy",
+	"path": "res://characters/swordandgun/SwordGuy.tscn",
+	"items": {
+		"Dash": {
+			"id": 1,
+			"name": "Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Dash",
+				"Dash1k"
+			]
+		},
+		"Air Dash": {
+			"id": 2,
+			"name": "Air Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"AirDash2",
+				"AirDash1k"
+			]
+		},
+		"1000 Cuts": {
+			"id": 3,
+			"name": "1000 Cuts",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"1000Cuts"
+			]
+		},
+		"Time Splitter": {
+			"id": 4,
+			"name": "Time Splitter",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"TimeSplitter"
+			]
+		},
+		"Fatal Cut": {
+			"id": 5,
+			"name": "Fatal Cut",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"1000CutsEnd"
+			]
+		},
+		"3 Combo": {
+			"id": 6,
+			"name": "3 Combo",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"3Combo"
+			]
+		},
+		"3 Combo Down": {
+			"id": 7,
+			"name": "3 Combo Down",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"3ComboDown"
+			]
+		},
+		"Lightning Slice": {
+			"id": 8,
+			"name": "Lightning Slice",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LightningSliceCancel"
+			]
+		},
+		"Lasso": {
+			"id": 9,
+			"name": "Lasso",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Lasso"
+			]
+		},
+		"Pull": {
+			"id": 10,
+			"name": "Pull",
+			"starter": false,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"LassoPull"
+			]
+		},
+		"Izuna Drop": {
+			"id": 11,
+			"name": "Izuna Drop",
+			"starter": false,
+			"type": "Special",
+			"location": 1,
+			"free_item": true,
+			"states": [
+				"LassoReel"
+			]
+		},
+		"Horiz. Slash": {
+			"id": 12,
+			"name": "Horiz. Slash",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"HSlash2",
+				"HAirSlash"
+			]
+		},
+		"Vert. Slash": {
+			"id": 13,
+			"name": "Vert. Slash",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"VSlash",
+				"VAirSlash"
+			]
+		},
+		"Upward Swipe": {
+			"id": 14,
+			"name": "Upward Swipe",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"UpwardSwipe",
+				"UpwardSwipeAir"
+			]
+		},
+		"Stinger": {
+			"id": 15,
+			"name": "Stinger",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Stinger"
+			]
+		},
+		"Impale": {
+			"id": 16,
+			"name": "Impale",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ImpaleTeleport"
+			]
+		},
+		"Gun Throw": {
+			"id": 17,
+			"name": "Gun Throw",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"GunThrow"
+			]
+		},
+		"Gun Pull": {
+			"id": 18,
+			"name": "Gun Pull",
+			"starter": false,
+			"type": "Special",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"GunReel"
+			]
+		},
+		"Downward Cleave": {
+			"id": 19,
+			"name": "Downward Cleave",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DownwardCleave",
+				"DownwardCleaveGround"
+			]
+		},
+		"Pistol Whip": {
+			"id": 20,
+			"name": "Pistol Whip",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo"
+			]
+		},
+		"Shoot": {
+			"id": 21,
+			"name": "Shoot",
+			"starter": false,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Shoot2"
+			]
+		},
+		"Shoot Dodge": {
+			"id": 22,
+			"name": "Shoot Dodge",
+			"starter": false,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ShootDodge2"
+			]
+		},
+		"Point Blank": {
+			"id": 23,
+			"name": "Point Blank",
+			"starter": false,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"PointBlank"
+			]
+		},
+		"Spot Dodge": {
+			"id": 24,
+			"name": "Spot Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"SpotDodge"
+			]
+		},
+		"Foresight": {
+			"id": 25,
+			"name": "Foresight",
+			"starter": false,
+			"type": "Special",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"ForesightNeutral"
+			]
+		},
+		"Pommel": {
+			"id": 26,
+			"name": "Pommel",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Pommel"
+			]
+		},
+		"Teleport": {
+			"id": 27,
+			"name": "Teleport",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"FastTeleport"
+			]
+		},
+		"Quick Draw": {
+			"id": 28,
+			"name": "Quick Draw",
+			"starter": false,
+			"type": "Special",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Brandish"
+			]
+		},
+		"Holster": {
+			"id": 29,
+			"name": "Holster",
+			"starter": false,
+			"type": "Special",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"SlowHolster"
+			]
+		},
+		"Temporal Round": {
+			"id": 30,
+			"name": "Temporal Round",
+			"starter": false,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"TimeBullet"
+			]
+		},
+		"Ankle Cutter": {
+			"id": 31,
+			"name": "Ankle Cutter",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"AnkleCutter"
+			]
+		},
+		"Back Slash": {
+			"id": 32,
+			"name": "Back Slash",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"BackSlash"
+			]
+		},
+		"Block": {
+			"id": 33,
+			"name": "Block",
+			"starter": false,
+			"type": "Defense",
+			"location": 3,
+			"free_item": false,
+			"states": [
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff"
+			]
+		},
+		"Dodge": {
+			"id": 34,
+			"name": "Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Roll"
+			]
+		},
+		"Wait": {
+			"id": 35,
+			"name": "Wait",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Wait"
+			]
+		},
+		"Burst": {
+			"id": 36,
+			"name": "Burst",
+			"starter": false,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Burst",
+				"DefensiveBurst",
+				"OffensiveBurst"
+			]
+		},
+		"Fall": {
+			"id": 37,
+			"name": "Fall",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Fall"
+			]
+		},
+		"Walk Forward": {
+			"id": 38,
+			"name": "Walk Forward",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DashForward1k",
+				"DashForward"
+			]
+		},
+		"Getup": {
+			"id": 39,
+			"name": "Getup",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Getup"
+			]
+		},
+		"Tech Dodge": {
+			"id": 40,
+			"name": "Tech Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"TechRoll"
+			]
+		},
+		"Walk Back": {
+			"id": 41,
+			"name": "Walk Back",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DashBackward"
+			]
+		},
+		"Jump": {
+			"id": 42,
+			"name": "Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Jump"
+			]
+		},
+		"Super Dash": {
+			"id": 43,
+			"name": "Super Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"ChargeDash"
+			]
+		},
+		"Super Jump": {
+			"id": 44,
+			"name": "Super Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"SuperJump"
+			]
+		},
+		"Double Jump": {
+			"id": 45,
+			"name": "Double Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DoubleJump"
+			]
+		},
+		"Inst. Cancel": {
+			"id": 46,
+			"name": "Inst. Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"InstantCancel"
+			]
+		},
+		"Whiff Cancel": {
+			"id": 47,
+			"name": "Whiff Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"WhiffInstantCancel"
+			]
+		},
+		"Throw": {
+			"id": 48,
+			"name": "Throw",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Grab",
+				"AirGrab"
+			]
+		},
+		"Hustle": {
+			"id": 49,
+			"name": "Hustle",
+			"starter": false,
+			"type": "Defense",
+			"location": 2,
+			"free_item": false,
+			"states": [
+				"Guntrick",
+				"Taunt"
+			]
+		}
+	},
+	"states": {
+		"Start": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+
+			]
+		},
+		"Dash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"Jump"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirDash2": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirDash2Back": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirDash2"
+			]
+		},
+		"Dash1k": {
+			"resources": [
+				"1k"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperDash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"ChargeDash"
+			]
+		},
+		"AirDash1k": {
+			"resources": [
+				"1k"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirDash1kBack": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirDash1k"
+			]
+		},
+		"1000Cuts": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSuper",
+				"GroundedSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TimeSplitter": {
+			"resources": [
+				"1k"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSuper",
+				"AerialSpecial",
+				"GroundedSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"1000CutsEnd": {
+			"resources": [
+				"1k"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSuper",
+				"GroundedSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"3Combo": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"3ComboDown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"LightningSlice": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"LightningSliceNeutral": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"LightningSliceCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"LightningSliceCancel"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Lasso": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"LassoPull": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Lasso"
+			],
+			"follow_from": [
+
+			]
+		},
+		"LassoHit": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Lasso"
+			]
+		},
+		"LassoReel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Lasso"
+			],
+			"follow_from": [
+
+			]
+		},
+		"HSlash2": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"HSlashUp": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"HSlash2"
+			]
+		},
+		"VSlash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"UpwardSwipe": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"UpwardSwipeAir": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Stinger": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ImpaleTeleport": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ImpaleFollowup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"ImpaleTeleport"
+			]
+		},
+		"GunThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"Gun",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"GunReel": {
+			"resources": [
+				"Gun Throw"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DownwardCleave": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"GroundedAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DownwardCleaveGround": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"GroundedAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"VAirSlash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"HAirSlash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"PistolWhip": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Gun",
+				"AerialAttack",
+				"GroundedAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"PistolWhipGround": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Gun"
+			],
+			"follow_from": [
+
+			]
+		},
+		"PistolWhipCombo": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Gun",
+				"AerialAttack",
+				"GroundedAttack",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"PistolWhipGroundCombo": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Gun"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Shoot2": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Gun"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ShootDodge2": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Gun"
+			],
+			"follow_from": [
+
+			]
+		},
+		"PointBlank": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Gun"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SpotDodge": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"Teleport",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ForesightNeutral": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"Teleport",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Pommel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"FastTeleport": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSuper",
+				"GroundedSuper",
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Brandish": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"QuickerDraw": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"@PlayerExtra"
+			]
+		},
+		"SlowHolster": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"SlowHolster"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TimeBullet": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"TimeBullet",
+				"Gun"
+			],
+			"follow_from": [
+
+			]
+		},
+		"IzunaDrop": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"LassoReel"
+			]
+		},
+		"AnkleCutter": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"BackSlash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParrySuper": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedDefense",
+				"AerialDefense",
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParryHigh": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParryAfterWhiff": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Roll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Wait": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Wait",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Burst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"BusyHurt"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DefensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OffensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OffensiveBurst"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Fall": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Fall",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Landing": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"3Combo",
+				"DownwardCleave",
+				"3ComboDown",
+				"IzunaDrop",
+				"PistolWhipGround",
+				"PistolWhipGroundCombo",
+				"DownwardCleaveGround"
+			]
+		},
+		"DashForward1k": {
+			"resources": [
+				"1k"
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Knockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HardKnockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Getup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TechRoll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+				"ShootDodge2"
+			]
+		},
+		"DashForward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DashBackward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Jump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ChargeDash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DoubleJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"InstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"InstantCancel"
+			],
+			"follow_from": [
+
+			]
+		},
+		"WhiffInstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"BusyNormal"
+			],
+			"follow_from": [
+
+			]
+		},
+		"HurtDizzy": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"WallSlam": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtAerial": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtGrounded": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Grabbed": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Grab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedGrab",
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialGrab",
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"BackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"AirForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"AirBackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"AirDownThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"Guntrick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Guntrick"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Taunt": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSuper",
+				"GroundedSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"@PlayerExtra": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		}
+	},
+	"interrupts_by_stance": {
+		"Normal": {
+			"Grounded": [
+				"HurtAerial",
+				"Dash",
+				"AirDash2Back",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"HSlashUp",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"3Combo",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"DownwardCleave",
+				"3ComboDown",
+				"LightningSlice",
+				"LightningSliceCancel",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlash2",
+				"VSlash",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"BackThrow",
+				"Grab",
+				"Roll",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"WallSlam",
+				"Start"
+			],
+			"Aerial": [
+				"Dash",
+				"AirDash2Back",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"3Combo",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"DownwardCleave",
+				"3ComboDown",
+				"LightningSlice",
+				"LightningSliceCancel",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"UpwardSwipe",
+				"Stinger",
+				"BackThrow",
+				"Grab",
+				"Roll",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"WallSlam",
+				"Start"
+			],
+			"OffensiveBurst": [
+				"AirDash2Back",
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoHit",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"InstantCancel": [
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoHit",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"BackThrow",
+				"Roll",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"GroundedDefense": [
+				"InstantCancel",
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoReel",
+				"LassoHit",
+				"Lasso",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"AerialDefense": [
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoReel",
+				"LassoHit",
+				"Lasso",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"GroundedGrab": [
+				"ParrySuper",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoReel",
+				"LassoHit",
+				"Lasso",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"AerialGrab": [
+				"ForwardThrow",
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoReel",
+				"LassoHit",
+				"Lasso",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"Wait": [
+				"AirForwardThrow",
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoReel",
+				"LassoHit",
+				"Lasso",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"Fall": [
+				"Wait",
+				"Fall",
+				"TimeSplitter",
+				"Landing",
+				"Burst",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoReel",
+				"LassoHit",
+				"Lasso",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirForwardThrow",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"QuickerDraw",
+				"Start"
+			],
+			"BusyNormal": [
+				"Fall",
+				"TimeSplitter",
+				"1000Cuts",
+				"1000CutsEnd",
+				"FastTeleport",
+				"Taunt",
+				"UpwardSwipeAir",
+				"3Combo",
+				"3ComboDown",
+				"LightningSliceCancel",
+				"LightningSlice",
+				"LightningSliceNeutral",
+				"LassoPull",
+				"IzunaDrop",
+				"LassoReel",
+				"LassoHit",
+				"Lasso",
+				"GunThrow",
+				"GunReel",
+				"SpotDodge",
+				"ForesightNeutral",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"TimeBullet",
+				"Shoot2",
+				"TechRoll",
+				"ShootDodge2",
+				"PointBlank",
+				"SlowHolster",
+				"Guntrick",
+				"Brandish",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"VAirSlash",
+				"HAirSlash",
+				"AirForwardThrow",
+				"AirDownThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"Dash",
+				"AirDash2Back",
+				"AirDash2",
+				"Dash1k",
+				"AirDash1kBack",
+				"AirDash1k",
+				"Jump",
+				"SuperJump",
+				"VSlash",
+				"UpwardSwipe",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Wait",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"DoubleJump",
+				"DashForward1k",
+				"DashForward",
+				"DashBackward",
+				"SuperDash",
+				"ChargeDash",
+				"QuickerDraw",
+				"Start"
+			],
+			"GroundedAttack": [
+				"WhiffInstantCancel",
+				"HSlashUp",
+				"3ComboDown",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"DownwardCleave",
+				"HAirSlash",
+				"HSlash2",
+				"VSlash",
+				"Stinger",
+				"Pommel"
+			],
+			"GroundedSpecial": [
+				"HSlashUp",
+				"3ComboDown",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"HAirSlash",
+				"BackSlash",
+				"HSlash2",
+				"VSlash",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"WhiffInstantCancel"
+			],
+			"BusyHurt": [
+				"Landing",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam"
+			],
+			"AerialSuper": [
+				"3Combo",
+				"3ComboDown",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"Brandish",
+				"Guntrick",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"Stinger",
+				"WhiffInstantCancel",
+				"QuickerDraw"
+			],
+			"AerialAttack": [
+				"3Combo",
+				"DownwardCleave",
+				"3ComboDown",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"Stinger",
+				"WhiffInstantCancel"
+			],
+			"AerialSpecial": [
+				"DownwardCleave",
+				"3Combo",
+				"3ComboDown",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"DownwardCleaveGround",
+				"Stinger",
+				"WhiffInstantCancel"
+			],
+			"GroundedSuper": [
+				"3ComboDown",
+				"PistolWhip",
+				"PistolWhipGround",
+				"PistolWhipCombo",
+				"PistolWhipGroundCombo",
+				"Brandish",
+				"Guntrick",
+				"DownwardCleave",
+				"DownwardCleaveGround",
+				"HAirSlash",
+				"ImpaleFollowup",
+				"ImpaleTeleport",
+				"BackSlash",
+				"HSlashUp",
+				"HSlash2",
+				"VSlash",
+				"Stinger",
+				"Pommel",
+				"AnkleCutter",
+				"WhiffInstantCancel",
+				"QuickerDraw"
+			],
+			"LightningSliceCancel": [
+				"LightningSlice",
+				"LightningSliceCancel",
+				"LightningSliceNeutral"
+			],
+			"Lasso": [
+				"LassoHit"
+			],
+			"Gun": [
+				"Brandish",
+				"Guntrick",
+				"QuickerDraw"
+			],
+			"TimeBullet": [
+				"Shoot2",
+				"ShootDodge2",
+				"PointBlank"
+			],
+			"SlowHolster": [
+				"Brandish",
+				"Guntrick",
+				"QuickerDraw"
+			],
+			"Guntrick": [
+				"Brandish",
+				"QuickerDraw"
+			],
+			"Teleport": [
+				"Guntrick",
+				"Brandish",
+				"QuickerDraw"
+			],
+			"Jump": [
+				"VSlash",
+				"Pommel",
+				"AnkleCutter"
+			],
+			"OTG": [
+				"Knockdown"
+			]
+		}
+	},
+	"resources": {
+		"1k": [
+			"1000Cuts"
+		],
+		"Gun Throw": [
+			"GunThrow"
+		]
+	}
+}

@@ -1,0 +1,2746 @@
+{
+	"id": 5,
+	"name": "Mutant",
+	"path": "res://characters/mutant/Mutant.tscn",
+	"items": {
+		"Caustic Barrage Lo": {
+			"id": 1,
+			"name": "Caustic Barrage Lo",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"CausticBarrageAir"
+			]
+		},
+		"Caustic Barrage": {
+			"id": 2,
+			"name": "Caustic Barrage",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"CausticBarrage"
+			]
+		},
+		"Swipe": {
+			"id": 3,
+			"name": "Swipe",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Swipe2",
+				"Swipe"
+			]
+		},
+		"Low Swipe": {
+			"id": 4,
+			"name": "Low Swipe",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"SwipeDown"
+			]
+		},
+		"Howl": {
+			"id": 5,
+			"name": "Howl",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"JukeCharge"
+			]
+		},
+		"Slash": {
+			"id": 6,
+			"name": "Slash",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Slash"
+			]
+		},
+		"Shred": {
+			"id": 7,
+			"name": "Shred",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"GroundToAirSpin",
+				"AirSpin"
+			]
+		},
+		"Sweep": {
+			"id": 8,
+			"name": "Sweep",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Sweep"
+			]
+		},
+		"Kick": {
+			"id": 9,
+			"name": "Kick",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Kick",
+				"AirKick"
+			]
+		},
+		"Overhead Claw": {
+			"id": 10,
+			"name": "Overhead Claw",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"OverheadClaw"
+			]
+		},
+		"AirSwipe": {
+			"id": 11,
+			"name": "AirSwipe",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"AirSwipe"
+			]
+		},
+		"Vault": {
+			"id": 12,
+			"name": "Vault",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ProjectileGrab"
+			]
+		},
+		"Dash Attack": {
+			"id": 13,
+			"name": "Dash Attack",
+			"starter": false,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"ForwardDashFollowup"
+			]
+		},
+		"Caustic Spike": {
+			"id": 14,
+			"name": "Caustic Spike",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"CausticSpike"
+			]
+		},
+		"Leap Slash": {
+			"id": 15,
+			"name": "Leap Slash",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"AcidSlashJ"
+			]
+		},
+		"Air Dash": {
+			"id": 16,
+			"name": "Air Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"AirDashForward"
+			]
+		},
+		"V. Acid Slash": {
+			"id": 17,
+			"name": "V. Acid Slash",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"AcidSlashV"
+			]
+		},
+		"Corkscrew": {
+			"id": 18,
+			"name": "Corkscrew",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"TwistAttack"
+			]
+		},
+		"Shockwave": {
+			"id": 19,
+			"name": "Shockwave",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Shockwave"
+			]
+		},
+		"Envenom": {
+			"id": 20,
+			"name": "Envenom",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"BiteGrab"
+			]
+		},
+		"Pounce": {
+			"id": 21,
+			"name": "Pounce",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"WallTrick"
+			]
+		},
+		"H. Acid Slash": {
+			"id": 22,
+			"name": "H. Acid Slash",
+			"starter": true,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"AcidSlashH"
+			]
+		},
+		"Rebirth": {
+			"id": 23,
+			"name": "Rebirth",
+			"starter": true,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Rebirth"
+			]
+		},
+		"Sneak Attack": {
+			"id": 24,
+			"name": "Sneak Attack",
+			"starter": false,
+			"type": "Special",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"DashThroughAttack"
+			]
+		},
+		"Block": {
+			"id": 25,
+			"name": "Block",
+			"starter": false,
+			"type": "Defense",
+			"location": 3,
+			"free_item": false,
+			"states": [
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff"
+			]
+		},
+		"Dodge": {
+			"id": 26,
+			"name": "Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Roll"
+			]
+		},
+		"Wait": {
+			"id": 27,
+			"name": "Wait",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Wait"
+			]
+		},
+		"Burst": {
+			"id": 28,
+			"name": "Burst",
+			"starter": false,
+			"type": "Super",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Burst",
+				"DefensiveBurst",
+				"OffensiveBurst"
+			]
+		},
+		"Fall": {
+			"id": 29,
+			"name": "Fall",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Fall"
+			]
+		},
+		"Super Fall": {
+			"id": 30,
+			"name": "Super Fall",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"SuperFallStartup"
+			]
+		},
+		"Getup": {
+			"id": 31,
+			"name": "Getup",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": true,
+			"states": [
+				"Getup"
+			]
+		},
+		"Tech Dodge": {
+			"id": 32,
+			"name": "Tech Dodge",
+			"starter": false,
+			"type": "Defense",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"TechRoll"
+			]
+		},
+		"Dash Forward": {
+			"id": 33,
+			"name": "Dash Forward",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DashForward"
+			]
+		},
+		"Dash Back": {
+			"id": 34,
+			"name": "Dash Back",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DashBackward"
+			]
+		},
+		"Jump": {
+			"id": 35,
+			"name": "Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"Jump"
+			]
+		},
+		"Super Dash": {
+			"id": 36,
+			"name": "Super Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"ChargeDash"
+			]
+		},
+		"Super Jump": {
+			"id": 37,
+			"name": "Super Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"SuperJump"
+			]
+		},
+		"Double Jump": {
+			"id": 38,
+			"name": "Double Jump",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"DoubleJump"
+			]
+		},
+		"Slop Dash": {
+			"id": 39,
+			"name": "Slop Dash",
+			"starter": false,
+			"type": "Movement",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"AirDash"
+			]
+		},
+		"Inst. Cancel": {
+			"id": 40,
+			"name": "Inst. Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"InstantCancel"
+			]
+		},
+		"Whiff Cancel": {
+			"id": 41,
+			"name": "Whiff Cancel",
+			"starter": false,
+			"type": "Super",
+			"location": 0,
+			"free_item": false,
+			"states": [
+				"WhiffInstantCancel"
+			]
+		},
+		"Throw": {
+			"id": 42,
+			"name": "Throw",
+			"starter": true,
+			"type": "Attack",
+			"location": 1,
+			"free_item": false,
+			"states": [
+				"Grab",
+				"AirGrab"
+			]
+		},
+		"Hustle": {
+			"id": 43,
+			"name": "Hustle",
+			"starter": false,
+			"type": "Defense",
+			"location": 2,
+			"free_item": false,
+			"states": [
+				"Taunt"
+			]
+		}
+	},
+	"states": {
+		"Start": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+
+			]
+		},
+		"CausticBarrageAir": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"AerialSuper"
+			],
+			"follow_from": [
+
+			]
+		},
+		"CausticBarrage": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded",
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Swipe2": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Swipe2"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Swipe": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SwipeDown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"JukeCharge": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Slash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"GroundToAirSpin": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Sweep": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Kick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OverheadClaw": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirSpin": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SwipeUp": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Swipe"
+			]
+		},
+		"AirSwipe": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirKick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ProjectileGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ForwardDashFollowup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"ForwardDashAttack"
+			],
+			"follow_from": [
+
+			]
+		},
+		"CausticSpike": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AcidSlashJ": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"AerialSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AcidSlashJUp": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AcidSlashJ"
+			]
+		},
+		"AirDashForward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"BiteThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"BiteGrab"
+			]
+		},
+		"ProjectileGrabJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"ProjectileGrab"
+			]
+		},
+		"AcidSlashV": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TwistAttack": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Shockwave": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"BiteGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSpecial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"WallTrick": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"WallTrickFollowup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"WallTrick"
+			]
+		},
+		"WallTrickFollowup2": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"WallTrick"
+			]
+		},
+		"WallTrickFollowup3": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"WallTrick"
+			]
+		},
+		"AcidSlashH": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Rebirth": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DashThroughAttack": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"ForwardDashAttack"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParrySuper": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedDefense",
+				"AerialDefense",
+				"AerialSpecial",
+				"GroundedSpecial",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ShredLandCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirSpin",
+				"GroundToAirSpin"
+			]
+		},
+		"ParryHigh": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ParryAfterWhiff": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialSpecial",
+				"GroundedSpecial",
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"PounceFailRoll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3"
+			]
+		},
+		"Roll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialDefense",
+				"GroundedDefense",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Wait": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Wait",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Burst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"BusyHurt"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DefensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"OffensiveBurst": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OffensiveBurst",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Fall": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Fall",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperFallStartup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperFall": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"SuperFallStartup"
+			]
+		},
+		"Landing": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"CausticBarrageAir",
+				"ForwardThrow",
+				"AirForwardThrow",
+				"ProjectileGrab",
+				"ProjectileGrabJump",
+				"AcidSlashV",
+				"WallTrick",
+				"WallTrickFollowup",
+				"AirSwipe",
+				"AirKick",
+				"AirBackThrow",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"AcidSlashH",
+				"ForwardDashFollowup",
+				"Kick",
+				"BackThrow",
+				"SuperFallStartup",
+				"SuperFall",
+				"AirDash"
+			]
+		},
+		"Knockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HardKnockdown": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Getup": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+
+			]
+		},
+		"TechRoll": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"OTG"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DashForward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DashBackward": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"Jump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ChargeDash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"SuperJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Jump",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"DoubleJump": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"DoubleJump",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirDash": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"InstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"InstantCancel"
+			],
+			"follow_from": [
+
+			]
+		},
+		"WhiffInstantCancel": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"BusyNormal"
+			],
+			"follow_from": [
+
+			]
+		},
+		"HurtDizzy": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"WallSlam": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtAerial": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"HurtGrounded": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Grabbed": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		},
+		"Grab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedGrab",
+				"GroundedAttack",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"AirGrab": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"AerialGrab",
+				"AerialAttack",
+				"Aerial"
+			],
+			"follow_from": [
+
+			]
+		},
+		"ForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"BackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Grab"
+			]
+		},
+		"AirForwardThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"AirBackThrow": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"AirGrab"
+			]
+		},
+		"Taunt": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+				"GroundedSuper",
+				"AerialSuper",
+				"Aerial",
+				"Grounded"
+			],
+			"follow_from": [
+
+			]
+		},
+		"@PlayerExtra": {
+			"resources": [
+
+			],
+			"stance_to_from": {
+				"Normal": [
+					"Normal"
+				]
+			},
+			"interrupt_from": [
+
+			],
+			"follow_from": [
+				"Start"
+			]
+		}
+	},
+	"interrupts_by_stance": {
+		"Normal": {
+			"Grounded": [
+				"HurtAerial",
+				"CausticBarrage",
+				"Landing",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"Wait",
+				"Fall",
+				"SwipeUp",
+				"CausticSpike",
+				"AcidSlashJUp",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"WallTrickFollowup",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"AirDashForward",
+				"ForwardDashFollowup",
+				"DoubleJump",
+				"DashThroughAttack",
+				"Jump",
+				"Swipe",
+				"Swipe2",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"Roll",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"WallSlam",
+				"Start"
+			],
+			"Aerial": [
+				"CausticBarrage",
+				"Landing",
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"Wait",
+				"Fall",
+				"SwipeUp",
+				"CausticSpike",
+				"AcidSlashJUp",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"WallTrickFollowup",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"AirDashForward",
+				"ForwardDashFollowup",
+				"DoubleJump",
+				"DashThroughAttack",
+				"Jump",
+				"SuperJump",
+				"Swipe",
+				"Swipe2",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"Roll",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"WallSlam",
+				"Start"
+			],
+			"OffensiveBurst": [
+				"Landing",
+				"InstantCancel",
+				"ParrySuper",
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"InstantCancel": [
+				"OffensiveBurst",
+				"InstantCancel",
+				"ParrySuper",
+				"Landing",
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Roll",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"GroundedDefense": [
+				"InstantCancel",
+				"ParrySuper",
+				"Landing",
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"AerialDefense": [
+				"ParrySuper",
+				"Landing",
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"GroundedGrab": [
+				"ParrySuper",
+				"Landing",
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"AerialGrab": [
+				"Landing",
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"Wait": [
+				"Landing",
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"Fall": [
+				"Wait",
+				"Fall",
+				"CausticSpike",
+				"Landing",
+				"Burst",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Grabbed",
+				"Getup",
+				"TechRoll",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam",
+				"Start"
+			],
+			"BusyNormal": [
+				"Fall",
+				"CausticSpike",
+				"ProjectileGrabJump",
+				"ProjectileGrab",
+				"CausticBarrage",
+				"JukeCharge",
+				"Rebirth",
+				"Taunt",
+				"CausticBarrageAir",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"TwistAttack",
+				"AirSpin",
+				"AirSwipe",
+				"AirKick",
+				"AirForwardThrow",
+				"AirBackThrow",
+				"AirGrab",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"WallTrick",
+				"AcidSlashH",
+				"ParrySuper",
+				"ParryHigh",
+				"ParryAfterWhiff",
+				"Shockwave",
+				"BiteThrow",
+				"BiteGrab",
+				"DoubleJump",
+				"ForwardDashFollowup",
+				"DashThroughAttack",
+				"AirDashForward",
+				"Jump",
+				"SuperJump",
+				"SwipeUp",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"GroundToAirSpin",
+				"Sweep",
+				"Kick",
+				"OverheadClaw",
+				"ForwardThrow",
+				"BackThrow",
+				"Grab",
+				"WhiffInstantCancel",
+				"Wait",
+				"Roll",
+				"InstantCancel",
+				"OffensiveBurst",
+				"DefensiveBurst",
+				"SuperFall",
+				"SuperFallStartup",
+				"AirDash",
+				"DashForward",
+				"DashBackward",
+				"ChargeDash",
+				"TechRoll",
+				"Start"
+			],
+			"GroundedAttack": [
+				"WhiffInstantCancel",
+				"SwipeUp",
+				"WallTrickFollowup",
+				"AirKick",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"Shockwave",
+				"ForwardDashFollowup",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"Kick"
+			],
+			"GroundedSpecial": [
+				"SwipeUp",
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"WallTrickFollowup",
+				"AirKick",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"AcidSlashH",
+				"Shockwave",
+				"ForwardDashFollowup",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"Sweep",
+				"Kick",
+				"WhiffInstantCancel"
+			],
+			"AerialSpecial": [
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"AirKick",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"AcidSlashH",
+				"Shockwave",
+				"SwipeUp",
+				"ForwardDashFollowup",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"Sweep",
+				"Kick",
+				"WhiffInstantCancel"
+			],
+			"BusyHurt": [
+				"Landing",
+				"PounceFailRoll",
+				"ShredLandCancel",
+				"HurtAerial",
+				"HurtGrounded",
+				"HurtDizzy",
+				"Getup",
+				"Knockdown",
+				"HardKnockdown",
+				"WallSlam"
+			],
+			"GroundedSuper": [
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"WallTrickFollowup",
+				"AirKick",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"AcidSlashH",
+				"Shockwave",
+				"SwipeUp",
+				"ForwardDashFollowup",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"Sweep",
+				"Kick",
+				"WhiffInstantCancel"
+			],
+			"AerialSuper": [
+				"AcidSlashJUp",
+				"AcidSlashJ",
+				"AcidSlashV",
+				"AirKick",
+				"WallTrickFollowup",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"AcidSlashH",
+				"Shockwave",
+				"SwipeUp",
+				"ForwardDashFollowup",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"Sweep",
+				"Kick",
+				"WhiffInstantCancel"
+			],
+			"AerialAttack": [
+				"WallTrickFollowup",
+				"AirKick",
+				"WallTrickFollowup2",
+				"WallTrickFollowup3",
+				"Shockwave",
+				"SwipeUp",
+				"ForwardDashFollowup",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash",
+				"Kick",
+				"WhiffInstantCancel"
+			],
+			"Jump": [
+				"SwipeUp",
+				"ForwardDashFollowup",
+				"Swipe2",
+				"Swipe",
+				"SwipeDown",
+				"Slash"
+			],
+			"ForwardDashAttack": [
+				"AirDashForward",
+				"ForwardDashFollowup",
+				"AirDash",
+				"DashForward"
+			],
+			"DoubleJump": [
+				"ForwardDashFollowup"
+			],
+			"Swipe2": [
+				"Swipe",
+				"Swipe2"
+			],
+			"OTG": [
+				"Knockdown"
+			]
+		}
+	},
+	"resources": {
+		"Slop": [
+			"JukeCharge"
+		]
+	}
+}
